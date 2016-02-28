@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Da Game</title>
+		<script type="text/javascript" src="./js/phaser-2.3.0-master-imagecollection-support.js"></script>
+		<script type="text/javascript" src="./js/Boot.js"></script>
+		<script type="text/javascript" src="./js/Preloader.js"></script>
+		<script type="text/javascript" src="./js/MainMenu.js"></script>
+		<script type="text/javascript" src="./js/Game.js"></script>
+		<script type="text/javascript" src="./js/Player.js"></script>
+		<script type="text/javascript" src="./js/ExtendedSprite.js"></script>
+		<script type="text/javascript" src="./js/ExtendedTilemapParser.js"></script>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="gameContainer"></div>
+
+		<script type="text/javascript">
+
+			window.onload = function() {
+				// Create your Phaser game and inject it into the gameContainer div.
+				var game = new Phaser.Game(512, 288, Phaser.AUTO, 'gameContainer');
+
+				// Add the States your game has.
+				game.state.add('Boot', DaGame.Boot);
+				game.state.add('Preloader', DaGame.Preloader);
+				game.state.add('MainMenu', DaGame.MainMenu);
+				game.state.add('Game', DaGame.Game);
+
+				// Now start the Boot state.
+				game.state.start('Boot');
+			};
+		</script>
+	</body>
+
+</html>
