@@ -1,3 +1,10 @@
+# ==============
+# The Game Files
+# ==============
+
+# Mongoose portable web server binary
+mongoose-free-5.5.exe
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
