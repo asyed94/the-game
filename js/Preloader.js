@@ -1,5 +1,5 @@
 
-DaGame.Preloader = function(game) {
+daGame.Preloader = function(game) {
 
 	this.background = null;
 	this.preloadBar = null;
@@ -16,7 +16,7 @@ DaGame.Preloader.prototype = {
 		this.background = this.add.sprite(0, 0, 'preloaderBackground');
 		this.preloadBar = this.add.sprite(166, 191, 'preloaderBar');
 
-		// This sets preloadBar sprite as a loader sprite.
+		// Make the preloadBar sprite a loader sprite.
 		this.load.setPreloadSprite(this.preloadBar);
 
 		// Load MainMenu assets
