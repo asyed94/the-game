@@ -1,5 +1,5 @@
 The Game (...for now)
-====================
+=====================
 
 A little FF6 inspired RPG collab between my sister and I. She's doing art, I'm doing code.
 
